@@ -2,4 +2,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-  return(request, 'demo_site.html')
+  return(request, 'polls/demo_site.html')
