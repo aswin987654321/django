@@ -2,9 +2,9 @@ FROM ubuntu:latest
 
 WORKDIR /app
 
-# Install necessary packages: apt-utils, Python, and venv
+# Install apt-utils, tzdata, Python, and venv
 RUN apt-get update && \
-    apt-get install -y apt-utils python3 python3-pip python3-venv
+    apt-get install -y apt-utils tzdata python3 python3-pip python3-venv
 
 # Create a virtual environment
 RUN python3 -m venv /app/venv
