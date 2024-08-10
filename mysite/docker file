@@ -11,7 +11,7 @@ RUN pip install --upgrade pip && \
     pip install -r requirements.txt
 
 # Copy the application code
-COPY mysite /app/mysite
+COPY devops /app/devops
 
 # Expose the port the app runs on
 EXPOSE 8000
